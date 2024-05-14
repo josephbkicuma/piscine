@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jquicuma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 10:45:44 by jquicuma          #+#    #+#             */
-/*   Updated: 2024/05/14 10:46:28 by jquicuma         ###   ########.fr       */
+/*   Created: 2024/05/14 10:47:37 by jquicuma          #+#    #+#             */
+/*   Updated: 2024/05/14 10:49:17 by jquicuma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/ft.h"
+#include "../includes/ft.h"
 
-void	ft_putchar(char c)
+int	main(int ac, char** av)
 {
-	write(1, &c, 1);
+	if (ac <= 1)
+		return (0);
+	ft_putchar(av[1][0]);
+	ft_putchar('\n');
+	return (0);
 }
