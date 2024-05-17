@@ -1,19 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jquicuma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 11:50:44 by jquicuma          #+#    #+#             */
-/*   Updated: 2024/05/14 12:16:59 by jquicuma         ###   ########.fr       */
+/*   Created: 2024/05/15 14:22:19 by jquicuma          #+#    #+#             */
+/*   Updated: 2024/05/15 14:23:25 by jquicuma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/ft.h"
+#include "../includes/ft.h"
 
-int	main(void)
+void    ft_rev_int_tab(int *tab, int size)
 {
-	ft_print_comb();
-	ft_putchar('\n');
+    int n;
+
+    n = 0;
+    size--;
+    while (n <= (size / 2))
+    {
+        ft_swap(&tab[n], &tab[size - n]);
+        n++;
+    }
 }

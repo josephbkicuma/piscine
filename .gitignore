@@ -1,3 +1,5 @@
 program
 a.out
 *.out
+*.o
+*.a

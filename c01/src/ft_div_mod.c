@@ -1,19 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jquicuma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 11:50:44 by jquicuma          #+#    #+#             */
-/*   Updated: 2024/05/14 12:16:59 by jquicuma         ###   ########.fr       */
+/*   Created: 2024/05/15 13:22:07 by jquicuma          #+#    #+#             */
+/*   Updated: 2024/05/15 13:22:10 by jquicuma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/ft.h"
-
-int	main(void)
+void    ft_div_mod(int a, int b, int *div, int *mod)
 {
-	ft_print_comb();
-	ft_putchar('\n');
+    *mod = a % b;
+    *div = a / b;
 }
